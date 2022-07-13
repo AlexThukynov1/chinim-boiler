@@ -1,0 +1,29 @@
+.callback-btn {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.call-btn {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 25px 0 0 0;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-wrapper {
+    margin: 25px 0
+}

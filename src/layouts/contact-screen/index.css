@@ -1,0 +1,30 @@
+.contact-item {
+    display: flex;
+    gap:30px;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin:10px 20px;
+}
+.contact-img {
+    max-width: 50px;
+}
+.contact-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact {
+    font-size: 25px;
+    font-weight:900;
+}
+.contact-item-wrapper {
+    
+}
