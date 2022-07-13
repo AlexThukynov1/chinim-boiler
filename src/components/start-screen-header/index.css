@@ -1,0 +1,17 @@
+.start-screen__header {
+    padding: 10px 0 0 0;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo-wrapper {
+    max-width:100px;
+    width: 100px;
+}
+.logo-img {
+    width: 100%;
+}

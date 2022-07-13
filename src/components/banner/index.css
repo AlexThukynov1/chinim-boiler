@@ -1,0 +1,35 @@
+.title {
+    text-align: center;
+    margin: 60px 0 0 0;
+    padding: 0;
+    font-size: 40px;
+}
+.text {
+    text-align: center;
+    margin: 20px 20px 0;
+}
+.callback-btn {
+    background-color:white;
+    border: solid 2px black;
+    border-radius:5px;
+    color: black;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.call-btn {
+    background-color:white;
+    border: solid 2px black;
+    border-radius:5px;
+    color: black;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.btn-wrapper {
+    margin: 25px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

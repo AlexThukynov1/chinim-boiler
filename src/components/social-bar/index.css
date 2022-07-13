@@ -1,0 +1,4 @@
+.start-screen__social-bar {
+    display: flex;
+    gap: 5px;
+}
