@@ -8,7 +8,9 @@ const StartScreen = (props) => {
             <StartScreenHeader className='general-layout'
                 socialBarData={props.socialBarData}
             />
-            <Banner/>
+            <Banner
+            textListData={props.textListData}
+            />
         </div>
     )
 }

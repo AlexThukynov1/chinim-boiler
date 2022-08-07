@@ -8,7 +8,7 @@ const PriceListItem = (props) => {
                 <span>{priceName}</span>
             </div>
             <div className='price'>
-                <span>{price} грн</span>
+                <span>{price}</span>
             </div>
         </div>
     )

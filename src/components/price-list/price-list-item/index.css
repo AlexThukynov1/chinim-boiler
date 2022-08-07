@@ -7,8 +7,10 @@
 }
 .service {
     flex:2;
+    color:#1D323F;
 }
 .price {
     flex:1;
     text-align: right;
+    color:#1D323F;
 }

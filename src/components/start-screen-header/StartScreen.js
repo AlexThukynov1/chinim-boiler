@@ -2,7 +2,7 @@ import "./index.css"
 import SocialBar from "../social-bar/SocialBar"
 import CoshImage from "../UI-components/CoshImage/CoshImage"
 import BurgerMenu from "../burger-menu/BurgerMenu"
-import logo from '../../assets/media/images/logo.png'
+import Images from "../../resources/image"
 
 const StartScreenHeader= (props) => {
     const {socialBarData} = props
@@ -10,7 +10,7 @@ const StartScreenHeader= (props) => {
         <header id="header" className="start-screen__header">
             <BurgerMenu/>
             <CoshImage
-                src={logo}
+                src={Images.Logo}
                 alt="Logo"
                 imgWrapperClass="logo-wrapper"
                 imgClass="logo-img"

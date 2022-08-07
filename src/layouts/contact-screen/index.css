@@ -28,3 +28,16 @@
 .contact-item-wrapper {
     
 }
+@media screen and (max-width: 900px) {
+    .contact-item {
+        gap:10px;
+        padding: 10px;
+        margin:5px 10px;
+    }
+    .contact-screen {
+        padding: 10px; 
+    }
+    .contact {
+        font-size: 15px;
+    }
+}

@@ -4,3 +4,19 @@
     justify-content: center;
     align-items: center;
 }
+.ps-text {
+    align-self: baseline;
+    color:#1D323F;
+    margin-top: 10px;
+}
+.ps-subtitle {
+    text-decoration: underline;
+    font-weight: 700;
+    color:#1D323F;
+    margin-top: 10px;
+}
+.service {
+    color:#1D323F;
+    font-weight: 700;
+    margin-top: 10px;
+}

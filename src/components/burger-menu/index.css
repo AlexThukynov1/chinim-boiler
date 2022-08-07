@@ -40,7 +40,7 @@
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: #A1C7C7;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     transition-duration: .25s;
   }
@@ -48,10 +48,10 @@
   .menu-item {
     display: block;
     padding: 12px 24px;
-    color: #333;
+    color: #1D323F;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     transition-duration: .25s;
     text-align: center;

@@ -5,7 +5,14 @@
     justify-content: center;
     align-items: center;
     padding: 25px;
-    background-color: rgb(109, 11, 11);
     max-width: 100%;
     width: 100%;
+}
+.footer .social-bar-item {
+    max-width: 75px;
+    object-fit:contain;
+}
+.footer .social-bar-item img {
+    max-width: 75px;
+    object-fit:contain;
 }

@@ -5,7 +5,7 @@ const FooterScreen = (props) => {
     return (
         <footer className='footer'>
             <SocialBar
-                socialBarData={props.socialBarData} 
+                socialBarData={props.socialBarDataFooter} 
             />
         </footer>
     )

@@ -1,6 +1,7 @@
 import './index.css'
 import Title from '../../components/title/Title'
-import src from '../../assets/media/images/viber.png'
+import Images from '../../resources/image'
+import Texts from '../../resources/text'
 
 const ContactScreen = (props) => {
     return (
@@ -10,16 +11,12 @@ const ContactScreen = (props) => {
             />
             <div className='contact-item-wrapper'>
             <a className='contact-item' href="tel">
-                <img src={src} alt="Viber" className="contact-img"/>
-                <span className='contact'>Viber</span>
+                <img src={Images.call} alt="Viber" className="contact-img"/>
+                <span className='contact'>{Texts.ua.contactText1}</span>
             </a>
             <a className='contact-item' href="tel">
-                <img src={src} alt="Viber" className="contact-img"/>
-                <span className='contact'>Viber</span>
-            </a>
-            <a className='contact-item' href="tel">
-                <img src={src} alt="Viber" className="contact-img"/>
-                <span className='contact'>Viber</span>
+                <img src={Images.letter} alt="Viber" className="contact-img"/>
+                <span className='contact'>{Texts.ua.contactText2}</span>
             </a>
             </div>
         </div>
