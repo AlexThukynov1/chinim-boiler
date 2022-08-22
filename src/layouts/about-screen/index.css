@@ -3,7 +3,6 @@
     flex-direction: column;
 }
 .content-wrapper {
-    background-image: url('../../assets/media//images/aboutBgImage.jpg');
     display: flex;
     flex-direction: column;
     background-size: 100%;

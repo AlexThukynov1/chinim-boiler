@@ -14,100 +14,95 @@ class App extends Component {
     this.state = {
       socialBarData: [
         {
-            src: Images.tgIcom,
+            src: Images.viberImg.src,
             link: '#',
-            alt: 'Alt'
+            alt: Images.viberImg.alt
         },
         {
-            src: Images.wtIcon,
+            src: Images.watsupImg.src,
             link: '#',
-            alt: 'Alt'
+            alt: Images.watsupImg.alt
         },
         {
-            src: Images.viberIcon,
+            src: Images.telegramImg.src,
             link: '#',
-            alt: 'Alt'
+            alt: Images.telegramImg.alt
         }
     ],
-    socialBarDataFooter: [
-      {
-          src: Images.telegramLogo,
-          link: '#',
-          alt: 'Alt'
-      },
-      {
-          src: Images.watsUpLogo,
-          link: '#',
-          alt: 'Alt'
-      },
-      {
-          src: Images.viberLogo,
-          link: '#',
-          alt: 'Alt'
-      }
-  ],
     textListData: [
       {
         id: 0,
-        src: Images.msTextListIcon1,
+        src: Images.checkImg.src,
         text: Texts.ua.msTextListItem1
       },
       {
         id: 1,
-        src: Images.msTextListIcon2,
+        src: Images.checkImg.src,
         text: Texts.ua.msTextListItem2
       },
       {
         id: 2,
-        src: Images.msTextListIcon3,
+        src: Images.checkImg.src,
         text: Texts.ua.msTextListItem3
       },
       {
         id: 3,
-        src: Images.msTextListIcon4,
+        src: Images.checkImg.src,
         text: Texts.ua.msTextListItem4
       },
       {
         id: 4,
-        src: Images.msTextListIcon5,
+        src: Images.checkImg.src,
         text: Texts.ua.msTextListItem5
+      },
+      {
+        id: 5,
+        src: Images.checkImg.src,
+        text: Texts.ua.msTextListItem6
       }
     ],
     aboutListData: [
       {
         id: 0,
         text: Texts.ua.causeText,
-        icon: Images.AboutListIcon
+        icon: Images.dotImg.src,
+        alt: Images.dotImg.alt
       },
       {
         id: 1,
         text: Texts.ua.causeText1,
-        icon: Images.AboutListIcon
+        icon: Images.dotImg.src,
+        alt: Images.dotImg.alt
       },
       {
         id: 0,
         text: Texts.ua.causeText2,
-        icon: Images.AboutListIcon
+        icon: Images.dotImg.src,
+        alt: Images.dotImg.alt
       },
       {
         id: 2,
         text: Texts.ua.causeText3,
-        icon: Images.AboutListIcon
+        icon: Images.dotImg.src,
+        alt: Images.dotImg.alt
       },
       {
         id: 3,
         text: Texts.ua.causeText4,
-        icon: Images.AboutListIcon
+        icon: Images.dotImg.src,
+        alt: Images.dotImg.alt
       },
       {
         id: 4,
         text: Texts.ua.causeText5,
-        icon: Images.AboutListIcon
+        icon: Images.dotImg.src,
+        alt: Images.dotImg.alt
       },
       {
         id: 5,
         text: Texts.ua.causeText6,
-        icon: Images.AboutListIcon
+        icon: Images.dotImg.src,
+        alt: Images.dotImg.alt
       },
     ]
     }
@@ -117,7 +112,6 @@ class App extends Component {
       <div className="app">
         <div className='content'>
         <StartScreen
-        socialBarData={this.state.socialBarData} 
         textListData={this.state.textListData}
         />
         <PriceScreen
@@ -127,9 +121,6 @@ class App extends Component {
           aboutListData={this.state.aboutListData}
         />
         <ContactScreen/>
-        <FooterScreen
-          socialBarDataFooter={this.state.socialBarDataFooter} 
-        />
        </div>
       </div>
     );

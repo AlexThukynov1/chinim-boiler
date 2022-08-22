@@ -5,9 +5,7 @@ import Banner from '../../components/banner/Banner'
 const StartScreen = (props) => {
     return (
         <div className='start-screen-wrapper'>
-            <StartScreenHeader className='general-layout'
-                socialBarData={props.socialBarData}
-            />
+            <StartScreenHeader className='general-layout'/>
             <Banner
             textListData={props.textListData}
             />

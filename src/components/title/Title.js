@@ -4,9 +4,9 @@ import './index.css'
 const Title = (props) => {
     const {title} = props
     return (
-        <React.Fragment>
+        <div className='title-wrapper'>
             <h2 className='title-component'>{title}</h2>
-        </React.Fragment>
+        </div>
     )
 }
 

@@ -4,21 +4,21 @@ import CoshText from '../UI-components/CoshText/CoshText'
 import Buttons from '../buttons/Buttons'
 import UniversalList from '../UI-components/UniversalList/UniversalList'
 import Texts from '../../resources/text'
+import Title from '../title/Title'
 
 
 const Banner = (props) => {
     const {textListData} = props;
     return (
     <div className='banner-wrapper' >
-        <h1 className='title'>{Texts.ua.msTitle}</h1>
+        <h1 className='title'>{Texts.ua.title}</h1>
         <CoshText
-            text={Texts.ua.msText1}
+            text={Texts.ua.title}
             classes="text ms-text-1" 
         />
         <Buttons/>
-        <CoshText
-            text={Texts.ua.msText2}
-            classes="text ms-text-2" 
+        <Title
+            title={Texts.ua.msText2}
         />
             <div className='general-list-wrapper'>
             {

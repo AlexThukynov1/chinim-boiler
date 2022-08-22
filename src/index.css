@@ -70,6 +70,25 @@ select {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 } */
 
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/centurygothic.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/centurygothic_bold.woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Franklin Gothic';
+  src: url('./assets/fonts/FRABK.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {

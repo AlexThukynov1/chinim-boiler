@@ -1,39 +1,51 @@
-import tgIcom from "../assets/media/images/telegram-icon.png";
-import wtIcon from "../assets/media/images/watsup-icon.png";
-import  viberIcon from "../assets/media/images/viber-icon.png";
-import Logo from "../assets/media/images/logo.png";
-import btn1Icon from "../assets/media/images/btn1Icon.png";
-import btn2Icon from "../assets/media/images/btn2Icon.png";
-import msTextListIcon1 from "../assets/media/images/msTextListIcon1.png";
-import msTextListIcon2 from "../assets/media/images/msTextListIcon2.png";
-import msTextListIcon3 from "../assets/media/images/msTextListIcon3.png";
-import msTextListIcon4 from "../assets/media/images/msTextListIcon4.png";
-import msTextListIcon5 from "../assets/media/images/msTextListIcon5.png";
-import AboutListIcon from "../assets/media/images/checkIcon.png";
-import telegramLogo from "../assets/media/images/telegram-logo.png";
-import watsUpLogo from "../assets/media/images/watsup-logo.png";
-import viberLogo from "../assets/media/images/viber-logo.png"
+import boylerImg from "../assets/media/images/boyler.jpg";
 import call from "../assets/media/images/call.png";
-import letter from "../assets/media/images/letter.png"
+import check from "../assets/media/images/check.png";
+import dot from "../assets/media/images/dot.png";
+import email from  "../assets/media/images/email.png";
+import logo from "../assets/media/images/logo.png";
+import telegram from "../assets/media/images/telegram.png";
+import viber from "../assets/media/images/viber.png";
+import watsup from "../assets/media/images/watsup.png";
 
 const Images = {
-    tgIcom,
-    wtIcon,
-    viberIcon,
-    Logo,
-    btn1Icon,
-    btn2Icon,
-    msTextListIcon1,
-    msTextListIcon2,
-    msTextListIcon3,
-    msTextListIcon4,
-    msTextListIcon5,
-    AboutListIcon,
-    telegramLogo,
-    watsUpLogo,
-    viberLogo,
-    call,
-    letter
+    boyler: {
+        src: boylerImg,
+        alt: "Бойлер" 
+    },
+    callImg: {
+        src: call,
+        alt: "" 
+    },
+    checkImg: {
+        src: check,
+        alt: ""
+    },
+    dotImg: {
+        src: dot,
+        alt: ""
+    },
+    emailImg: {
+        src: email,
+        alt: ""
+    },
+    logoImg: {
+        src: logo,
+        alt: ""
+    },
+    telegramImg: {
+        src: telegram,
+        alt: ""
+    },
+    viberImg : {
+        src: viber,
+        alt: ""
+    },
+    watsupImg: {
+        src: watsup,
+        alt: ""
+    }
+   
 }
 
 export default Images

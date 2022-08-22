@@ -2,23 +2,40 @@ import './index.css'
 import Title from '../../components/title/Title'
 import Images from '../../resources/image'
 import Texts from '../../resources/text'
+import CoshText from '../../components/UI-components/CoshText/CoshText'
 
 const ContactScreen = (props) => {
     return (
         <div className='contact-screen'>
-            <Title
-                title="Lorem ipsum."
+            <CoshText
+                text={Texts.ua.contactTitle}
+                classes={'contact-title'}
             />
-            <div className='contact-item-wrapper'>
-            <a className='contact-item' href="tel">
-                <img src={Images.call} alt="Viber" className="contact-img"/>
-                <span className='contact'>{Texts.ua.contactText1}</span>
-            </a>
-            <a className='contact-item' href="tel">
-                <img src={Images.letter} alt="Viber" className="contact-img"/>
-                <span className='contact'>{Texts.ua.contactText2}</span>
-            </a>
-            </div>
+            <hr className='line'></hr>
+             <CoshText
+                text={Texts.ua.contactText1a}
+                classes={'contact-sub-title'}
+            />
+            <CoshText
+                text={Texts.ua.contactText1}
+                classes={'contact-text'}
+            />
+            <CoshText
+                text={Texts.ua.contactText2a}
+                classes={'contact-sub-title'}
+            />
+            <CoshText
+                text={Texts.ua.contactText2}
+                classes={'contact-text'}
+            />
+            <CoshText
+                text={Texts.ua.contactText3a}
+                classes={'contact-sub-title'}
+            />
+            <CoshText
+                text={Texts.ua.contactText3}
+                classes={'contact-text'}
+            />
         </div>
     )
 }

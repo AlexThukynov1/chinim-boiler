@@ -10,13 +10,10 @@ const StartScreenHeader= (props) => {
         <header id="header" className="start-screen__header">
             <BurgerMenu/>
             <CoshImage
-                src={Images.Logo}
-                alt="Logo"
+                src={Images.logoImg.src}
+                alt={Images.logoImg.alt}
                 imgWrapperClass="logo-wrapper"
                 imgClass="logo-img"
-            />
-            <SocialBar
-                socialBarData={socialBarData}
             />
         </header>
     )

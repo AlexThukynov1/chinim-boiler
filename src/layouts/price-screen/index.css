@@ -6,8 +6,11 @@
 }
 .ps-text {
     align-self: baseline;
-    color:#1D323F;
-    margin-top: 10px;
+    font-family: 'Franklin Gothic';
+    color:#000;
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 11px;
 }
 .ps-subtitle {
     text-decoration: underline;
@@ -19,4 +22,11 @@
     color:#1D323F;
     font-weight: 700;
     margin-top: 10px;
+}
+.ps-title {
+    font-family: 'Franklin Gothic';
+    color:#404869;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 20px;
 }
