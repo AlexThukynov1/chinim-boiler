@@ -7,10 +7,9 @@ import CoshText from '../../components/UI-components/CoshText/CoshText'
 
 
 const PriceScreen = (props) => {
-    const {priceListData} = props
+    const {priceListData,formVisible} = props
     return (
-        <div className='price-screen'>
-            <h2 className='ps-title'>{Texts.ua.msTitle}</h2>
+        <div id="price" className='price-screen'>
             <Title
                 title={Texts.ua.priceTitle}
             />
@@ -40,7 +39,9 @@ const PriceScreen = (props) => {
                 text={Texts.ua.note4}
                 classes={'ps-text'}
             />
-            <Buttons/>
+            <Buttons
+                formVisible={formVisible}
+            />
         </div>
     )
 }

@@ -10,9 +10,9 @@ const BurgerMenu = (props) => {
         </label>
      
         <ul className="menubox">
-                <li><a className="menu-item" href="#">Головна</a></li>
-                <li><a className="menu-item" href="#">Прайс</a></li>
-                <li><a className="menu-item" href="#">Контакти</a></li>
+                <li><a className="menu-item" href="#start">Головна</a></li>
+                <li><a className="menu-item" href="#price">Прайс</a></li>
+                <li><a className="menu-item" href="#contacts">Контакти</a></li>
         </ul>
       </div>
     )

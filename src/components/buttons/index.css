@@ -4,18 +4,20 @@
     border-radius: 15px;
     color: #1D323F;
     padding: 10px 25px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     font-family: 'Century Gothic';
 }
-
+a{
+    text-decoration: none;
+}
 .call-btn {
     background-color: white;
     border: solid 4px #31A16A;
     border-radius: 15px;
     color: #1D323F;
     padding: 10px 25px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     margin: 25px 0 0 0;
     font-family: 'Century Gothic';

@@ -33,8 +33,18 @@
 .abu-text {
     color:#1D323F;
     padding-top: 10px;
-    text-align: left;
+    text-align: justify;
     width:400px;
+    font-family: 'Century Gothic';
+    width: 100%;
+}
+.boyler-img-wrapper {
+    max-width: 900px;
+    width: 100%;
+}
+.boyler-img {
+    max-width: 900px;
+    width: 100%;
 }
 @media screen and (max-width: 900px) {
     .abu-text {

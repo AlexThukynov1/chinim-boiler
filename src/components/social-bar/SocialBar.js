@@ -4,7 +4,7 @@ import SocialBarItem from './social-bar-item/SocialBarItem'
 const SocialBar = (props) => {
     const {socialBarData} = props
     return (
-        <div>
+        <div className='social-bar-wrapper'>
             <ul className="start-screen__social-bar">
                 {
                     socialBarData.map((item,index) => {

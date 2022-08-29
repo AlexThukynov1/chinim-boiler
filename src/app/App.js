@@ -4,7 +4,7 @@ import StartScreen from '../layouts/start-screen/StartScreen'
 import PriceScreen from '../layouts/price-screen/PriceScreen';
 import AboutScreen from '../layouts/about-screen/AboutScreen';
 import ContactScreen from '../layouts/contact-screen/ContactScreen';
-import FooterScreen from '../layouts/footer-screen/FooterScreen';
+import Form from '../components/form/Form';
 import Images from '../resources/image';
 import Texts from '../resources/text';
 
@@ -12,6 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isFormVisible: false,
       socialBarData: [
         {
             src: Images.viberImg.src,
@@ -104,21 +105,38 @@ class App extends Component {
         icon: Images.dotImg.src,
         alt: Images.dotImg.alt
       },
-    ]
+    ],
     }
   }
+  onFormTogle = () => {
+    this.setState({ isFormVisible: true })
+  }
+  closeForm = () => {
+    this.setState({ isFormVisible: false })
+  }
+  onSubmit =(e) => {
+    e.preventDefault();
+    this.setState({ isFormVisible: false })
+  }
   render() {
+    const {isFormVisible} = this.state;
+    const viewForm = isFormVisible? <Form onSubmit={this.onSubmit} closeForm={this.closeForm}/>: null;
     return (
       <div className="app">
+        {viewForm}
         <div className='content'>
         <StartScreen
         textListData={this.state.textListData}
+        formVisible={this.onFormTogle}
+        socialBarData={this.state.socialBarData}
         />
         <PriceScreen
           priceListData={Texts.ua.priceList}
+          formVisible={this.onFormTogle}
         />
         <AboutScreen
           aboutListData={this.state.aboutListData}
+          formVisible={this.onFormTogle}
         />
         <ContactScreen/>
        </div>

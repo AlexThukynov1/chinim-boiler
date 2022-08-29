@@ -6,7 +6,7 @@ import CoshText from '../../components/UI-components/CoshText/CoshText'
 
 const ContactScreen = (props) => {
     return (
-        <div className='contact-screen'>
+        <div id="contacts" className='contact-screen'>
             <CoshText
                 text={Texts.ua.contactTitle}
                 classes={'contact-title'}

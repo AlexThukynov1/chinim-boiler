@@ -7,6 +7,7 @@ import logo from "../assets/media/images/logo.png";
 import telegram from "../assets/media/images/telegram.png";
 import viber from "../assets/media/images/viber.png";
 import watsup from "../assets/media/images/watsup.png";
+import closeButton from "../assets/media/images/icon1.png";
 
 const Images = {
     boyler: {
@@ -44,6 +45,9 @@ const Images = {
     watsupImg: {
         src: watsup,
         alt: ""
+    },
+    closeBtn: {
+        src: closeButton
     }
    
 }

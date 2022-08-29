@@ -8,7 +8,7 @@ import UniversalList from '../../components/UI-components/UniversalList/Universa
 import Images from '../../resources/image'
 
 const AboutScreen = (props) => {
-    const {aboutListData} = props;
+    const {aboutListData,formVisible} = props;
     return (
         <div className='about-screen'>
             <Title
@@ -41,7 +41,9 @@ const AboutScreen = (props) => {
                 classes={'abu-text'}
             />
             </div>
-            <Buttons/>
+            <Buttons
+            formVisible={formVisible}
+            />
         </div>
     )
 }

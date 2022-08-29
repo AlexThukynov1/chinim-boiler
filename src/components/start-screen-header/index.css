@@ -1,17 +1,18 @@
 .start-screen__header {
-    padding: 10px 20px 0 20px;
+    padding: 20px 20px 0 20px;
     position: relative;
     max-width: 100%;
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
 }
 
 .logo-wrapper {
-    max-width:100px;
-    width: 100px;
+    max-width:150px;
+    width: 100%px;
 }
 .logo-img {
     width: 100%;
+    max-width:150px;
 }

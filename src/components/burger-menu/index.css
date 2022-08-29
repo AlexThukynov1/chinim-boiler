@@ -1,7 +1,7 @@
 .menu-btn{
     display: flex;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 18px;
     left:20px;
     width: 26px;
@@ -42,7 +42,7 @@
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #6A82AA;;
+    background-color: #6A82AA;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     transition-duration: .25s;
   }
@@ -69,18 +69,22 @@
    
   #menu-toggle:checked ~ .menu-btn > span{
     transform: rotate(45deg);
+    background-color: #ffffff;
   }
   #menu-toggle:checked ~ .menu-btn > span::before{
     top: 0;
     transform: rotate(0);
+    background-color: #ffffff;
   }
   #menu-toggle:checked ~ .menu-btn > span::after{
     top: 0;
     transform: rotate(90deg);
+    background-color: #ffffff;
   }
   #menu-toggle:checked ~ .menubox{
     visibility: visible;
     left: 0;
+    padding-top: 25%;
   }
   .burger-menu {
     width: 100px;
