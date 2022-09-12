@@ -18,11 +18,11 @@ const PriceScreen = (props) => {
             />
             <CoshText
                 text={Texts.ua.note1}
-                classes={'ps-text'}
+                classes={'ps-text-notes'}
             />
             <CoshText
                 text={Texts.ua.note2}
-                classes={'ps-text'}
+                classes={'ps-text-notes'}
             />
             <CoshText
                 text={Texts.ua.note3}
@@ -37,7 +37,7 @@ const PriceScreen = (props) => {
             />
             <CoshText
                 text={Texts.ua.note4}
-                classes={'ps-text'}
+                classes={'ps-text-notes'}
             />
             <Buttons
                 formVisible={formVisible}

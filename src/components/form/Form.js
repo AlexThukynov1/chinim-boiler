@@ -1,22 +1,63 @@
 import { Component } from "react"
+import BasicFormSchema from "./scheme";
+import { Formik, Field, Form } from "formik";
 import Images from "../../resources/image";
 import "./index.css"
 
-class Form extends Component  {
+class Forma extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            userName: "",
-            userEmail: "",
-            userText: ""
-        }
     }
     render() {
-        const {onSubmit,closeForm} = this.props;
-        return(
+        const { onSubmit, closeForm } = this.props;
+        return (
             <div id="formWrapper" className="form-wrapper">
                 <div className="form-bg">
-                <form className="form" onSubmit={onSubmit}>
+                    <Formik
+                        id="myform"
+                        initialValues={{
+                            userName: "",
+                            phone: "",
+                            location: "",
+                            description: ""
+                        }}
+                        validationSchema={BasicFormSchema}
+                        onSubmit={onSubmit}
+                        render={({ errors, touched }) => (
+                            <Form className="form">
+                                <div className="form-header">
+                                    <div><span className="form-caption">Залишити заявку</span></div>
+                                    <div onClick={closeForm}><img src={Images.closeBtn.src} /></div>
+                                </div>
+                                <Field className="input input-name" type="text" name="userName" placeholder="Вкажіть ваше ім'я" />
+
+                                {errors.userName &&
+                                    touched.userName && (
+                                        <div className="field-error">{errors.userName}</div>
+                                    )}
+                                <Field lassName="input input-tel" name="phone" placeholder="Вкажіть Ваш номер телефона" type="tel"
+                                />
+
+                                {errors.phone && touched.phone && <div className="field-error">{errors.phone}</div>}
+
+                                <Field className="input input-city" name="location" placeholder="Вкажіть звідки Ви" type="text" />
+
+                                {errors.location &&
+                                    touched.location && (
+                                        <div className="field-error">{errors.location}</div>
+                                    )}
+                                <Field className="input input-text-area" name="description" placeholder="Коротко опишвть Вашу проблему" type="text" />
+
+                                {errors.description &&
+                                    touched.description && (
+                                        <div className="field-error">{errors.description}</div>
+                                    )}
+
+                                <button className="submit-btn" type="submit">Відправити</button>
+                            </Form>
+                        )}
+                    />
+                    {/* <form className="form" onSubmit={onSubmit}>
                     <div className="form-header">
                         <div><span className="form-caption">Залишити заявку</span></div>
                         <div onClick={closeForm}><img src={Images.closeBtn.src}/></div>
@@ -26,12 +67,12 @@ class Form extends Component  {
                     <input className="input input-city" type="text" placeholder="Вкажіть Ваше місто\район"/>
                     <input className="input input-text-area" type="text" placeholder="Коротко опишіть Вашу проблему"/>
                     <button className="submit-btn" type="submit">Відправити</button>
-                </form>
+                </form> */}
                 </div>
             </div>
         )
     }
 }
 
-export default Form;
+export default Forma;
 

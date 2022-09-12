@@ -32,6 +32,7 @@ a{
     margin-top: 10px;
     width:335px;
     max-width:335px;
+    cursor: pointer;
 }
 .buttons-wrapper {
     margin: 25px 0;

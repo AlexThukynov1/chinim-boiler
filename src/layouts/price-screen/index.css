@@ -10,6 +10,15 @@
     color:#000;
     margin: 10px 0;
     padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.ps-text-notes {
+    align-self: baseline;
+    font-family: 'Franklin Gothic';
+    color:#000;
+    margin: 10px 0;
+    padding: 0 20px;
     font-size: 11px;
 }
 .ps-subtitle {
