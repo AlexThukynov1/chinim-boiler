@@ -13,10 +13,12 @@ const Buttons = (props) => {
                     <span className="">{Texts.ua.button1}</span>
                 </button>
             </a>
+            <a href="#">
             <button onClick={formVisible} className="callback-btn btn-wrapper">
                 <img src={Images.emailImg.src} alt="Button 2 icon" className="icon-img"/>
                 <span className="">{Texts.ua.button2}</span>
             </button>
+            </a>
         </div>
     )
 }

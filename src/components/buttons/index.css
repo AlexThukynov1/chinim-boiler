@@ -10,6 +10,8 @@
 }
 a{
     text-decoration: none;
+    width:335px;
+    max-width:335px;
 }
 .call-btn {
     background-color: white;
@@ -46,8 +48,9 @@ a{
     width: 35px;
     max-width: 35px;
 }
-@media screen and (max-width: 900px) {
-    .btn-wrapper {
+@media screen and (max-width: 765px) {
+    .btn-wrapper,
+    a {
         width: 100%;
         max-width: 100%;
     }

@@ -19,7 +19,7 @@ class App extends Component {
       socialBarData: [
         {
           src: Images.viberImg.src,
-          link: 'viber://chat?number=%380953674703',
+          link: 'viber://chat?number=%2B380953674703',
           alt: Images.viberImg.alt
         },
         {
