@@ -7,7 +7,7 @@ const OrderForm = (props) => {
             <div className='bg'>
                 <div className='order-form'>
                     <span className='order-text'>Ваша заявка №{orderId} прийнята,наш менеджер зв'яжеться з Вами найближчим часом</span>
-                    <button className='order-btn' onClick={onCloseOrder}>OK</button>
+                    <div className='order-btn' onClick={onCloseOrder}><span>OK</span></div>
                 </div>
             </div>
         </div>

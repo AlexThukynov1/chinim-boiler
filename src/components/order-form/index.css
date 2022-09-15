@@ -44,6 +44,10 @@
     font-family: 'Century Gothic';
     width: 15%;
     align-self:center;
+    text-align: center;
+}
+.order-btn span {
+    text-align: center;
 }
 .order-text {
     color: #1D323F;
@@ -51,4 +55,10 @@
     font-size: 15px;
     font-weight: 700;
     margin: 5px 0;
+}
+@media screen and (max-width: 900px) {
+    .order-btn {
+        padding: 10px 15px;
+        width: auto;
+    }
 }

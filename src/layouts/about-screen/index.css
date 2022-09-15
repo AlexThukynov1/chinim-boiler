@@ -8,7 +8,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 60px 20px 40px;
+    padding: 20px 20px 40px;
 }
 .abu-list-wrapper {
    
@@ -50,6 +50,8 @@
 @media screen and (max-width: 900px) {
     .abu-text {
         width: 100%;
+        text-align: left;
+        font-size: 13px;
     }
     .content-wrapper {
         padding: 20px;

@@ -35,6 +35,7 @@ a{
     width:335px;
     max-width:335px;
     cursor: pointer;
+    min-height: 65px;
 }
 .buttons-wrapper {
     margin: 25px 0;
@@ -43,6 +44,10 @@ a{
     justify-content: center;
     align-items:center;
     padding: 0 20px;
+}
+.icon-2 {
+    width: 50px;
+    max-width: 50px;
 }
 .icon-img {
     width: 35px;

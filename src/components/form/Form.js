@@ -27,15 +27,15 @@ class Forma extends Component {
                             <Form className="form">
                                 <div className="form-header">
                                     <div><span className="form-caption">Залишити заявку</span></div>
-                                    <div onClick={closeForm}><img src={Images.closeBtn.src} /></div>
+                                    <div className="close-btn" onClick={closeForm}><img src={Images.closeBtn.src} /></div>
                                 </div>
-                                <Field className="input input-name" type="text" name="userName" placeholder="Вкажіть ваше ім'я" />
+                                <Field className="input input-name" type="text" name="userName" placeholder="Вкажіть Ваше ім'я" />
 
                                 {errors.userName &&
                                     touched.userName && (
                                         <div className="field-error">{errors.userName}</div>
                                     )}
-                                <Field lassName="input input-tel" name="phone" placeholder="Вкажіть Ваш номер телефона" type="tel"
+                                <Field className="input input-tel" name="phone" placeholder="Вкажіть Ваш номер телефона" type="tel"
                                 />
 
                                 {errors.phone && touched.phone && <div className="field-error">{errors.phone}</div>}
@@ -46,7 +46,7 @@ class Forma extends Component {
                                     touched.location && (
                                         <div className="field-error">{errors.location}</div>
                                     )}
-                                <Field className="input input-text-area" name="description" placeholder="Коротко опишвть Вашу проблему" type="text" />
+                                <Field className="input input-text-area" name="description" placeholder="Коротко опишіть Вашу проблему" type="text" />
 
                                 {errors.description &&
                                     touched.description && (
