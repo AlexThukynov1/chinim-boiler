@@ -15,7 +15,7 @@ const Buttons = (props) => {
             </a>
             <a href="#">
             <button onClick={formVisible} className="callback-btn btn-wrapper">
-                <img src={Images.emailImg.src} alt="Button 2 icon" className="icon-img"/>
+                <img src={Images.emailImg.src} alt="Button 2 icon" className="icon-2"/>
                 <span className="">{Texts.ua.button2}</span>
             </button>
             </a>

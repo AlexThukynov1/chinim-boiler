@@ -30,6 +30,7 @@ const PriceScreen = (props) => {
             />
             <Title
                 title={Texts.ua.priceName}
+                titleClass={'title-custom'}
             />
             <CoshText
                 text={Texts.ua.priceDescription}
