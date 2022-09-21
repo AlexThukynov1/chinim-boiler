@@ -6,8 +6,8 @@
 }
 .ps-text {
     align-self: baseline;
-    font-family: 'Franklin Gothic';
-    color:#000;
+    font-family: 'Century Gothic';
+    color: #1d323f;
     margin: 10px 0;
     padding: 0 20px;
     font-size: 16px;
@@ -15,7 +15,7 @@
 }
 .ps-text-notes {
     align-self: baseline;
-    font-family: 'Franklin Gothic';
+    font-family: 'Century Gothic';
     color:#000;
     margin: 10px 0;
     padding: 0 20px;
@@ -39,6 +39,14 @@
     text-align: center;
     padding: 0 20px;
 }
+.btns-wrapper {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 0px;
+  }
 .title-custom {
     font-family: 'Century Gothic';
 }

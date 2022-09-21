@@ -4,9 +4,9 @@ import Images from "../../resources/image";
 
 
 const Buttons = (props) => {
-    const {formVisible} = props;
+    const {formVisible,btnsWrapper} = props;
     return (
-        <div className="buttons-wrapper">
+        <div className={`buttons-wrapper ${btnsWrapper}`}>
             <a href="tel:+38(095)-367-47-03">
                 <button className="call-btn btn-wrapper">
                     <img src={Images.callImg.src} alt="Button 1 icon" className="icon-img"/>

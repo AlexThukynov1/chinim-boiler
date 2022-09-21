@@ -23,7 +23,7 @@ const AboutScreen = (props) => {
                         iconSrc={item.icon}
                         textClass={'abu-list-text'}
                         text={item.text}
-                        ListWrapperClass={'abu-list-wrapper'}
+                        ListWrapperClass={'abu-list-wrapper m-i-lr-20'}
                         iconWrapper={'icon-wrapper'}
                         key={index}
                     />
@@ -38,12 +38,12 @@ const AboutScreen = (props) => {
             />
             <CoshText
                 text={Texts.ua.aboutUsText1}
-                classes={'abu-text'}
+                classes={'abu-text m-i-lr-20'}
             />
-            </div>
             <Buttons
             formVisible={formVisible}
             />
+            </div>
         </div>
     )
 }

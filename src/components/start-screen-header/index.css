@@ -16,3 +16,12 @@
     width: 100%;
     max-width:150px;
 }
+@media screen and (max-width: 900px)  {
+    .logo-wrapper {
+        max-width: 75%;
+    }
+    .logo-img {
+       width: 100%;
+       max-width: 100%; 
+    }
+}

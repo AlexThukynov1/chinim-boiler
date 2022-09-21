@@ -33,6 +33,14 @@
     width: 100%;
     max-width: 100%;
 }
+.btns-wrapper {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 0px;
+  }
 @media screen and (max-width: 900px) {
     
 }

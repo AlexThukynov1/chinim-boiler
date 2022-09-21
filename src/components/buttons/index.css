@@ -55,7 +55,18 @@ a{
 }
 @media screen and (max-width: 765px) {
     .btn-wrapper,
-    a {
+     a {
+        width: 100%;
+        max-width: 100%;
+        min-width:100%;
+    }
+    .btn-wrapper {
+        width: 100%;
+        max-width: 100%;
+        min-width:100%;
+        padding:10px 15px;
+    }
+    .btn-wrapper a button{
         width: 100%;
         max-width: 100%;
     }
@@ -64,5 +75,10 @@ a{
     }
     .call-btn {
        font-size: 17px;        
+    }
+    .buttons-wrapper {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
     }
 }

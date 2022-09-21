@@ -50,9 +50,13 @@
 .icon-wrapper {
     width: 20px;
 }
+
 .banner-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
+}
+@media screen and (max-width: 900px) {
+    
 }
