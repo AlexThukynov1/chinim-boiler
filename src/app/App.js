@@ -14,7 +14,7 @@ class App extends Component {
     super(props);
     this.state = {
       idOrder: null,
-      isFormVisible: true,
+      isFormVisible: false,
       isOrderForm: false,
       socialBarData: [
         {
