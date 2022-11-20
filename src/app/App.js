@@ -1,13 +1,17 @@
 import { Component } from 'react';
-import './App.css';
-import StartScreen from '../layouts/start-screen/StartScreen'
-import PriceScreen from '../layouts/price-screen/PriceScreen';
-import AboutScreen from '../layouts/about-screen/AboutScreen';
-import ContactScreen from '../layouts/contact-screen/ContactScreen';
-import OrderForm from '../components/order-form/OrderForm';
-import Forma from '../components/form/Form';
+
+import axios from 'axios';
+
 import Images from '../resources/image';
 import Texts from '../resources/text';
+import Forma from '../components/form/Form';
+import OrderForm from '../components/order-form/OrderForm';
+import AboutScreen from '../layouts/about-screen/AboutScreen';
+import ContactScreen from '../layouts/contact-screen/ContactScreen';
+import PriceScreen from '../layouts/price-screen/PriceScreen';
+import StartScreen from '../layouts/start-screen/StartScreen';
+
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -118,14 +122,35 @@ class App extends Component {
     this.setState({ isFormVisible: false })
   }
   onSubmit = async (values) => {
-    await new Promise((resolve) => setTimeout(resolve, 500));
-    console.log(values);
     values.id =  Date.now()
-    console.log(values);
-    alert(JSON.stringify(values, null, 2));
     this.setState({idOrder: values.id})
-    this.setState({isOrderForm: true,})
-    this.setState({isFormVisible: false,})
+    console.log(values);
+    let {userName, id, phone, description} = values;
+    try {
+      await axios.post('sendmail.php', {userName, id, phone, description});
+      this.setState({isOrderForm: true,});
+      this.setState({isFormVisible: false,});
+    } 
+    catch (error) {
+      console.log(error)
+      this.setState({isOrderForm: false,})
+      this.setState({isFormVisible: false,})
+    }
+    // let response = await fetch('sendmail.php', {
+    //   method: 'POST',
+    //   body: values
+    // });
+    // if(response.ok) {
+    //  let result = await response.json();
+    //  console.log(result)
+    //  alert(JSON.stringify(values, null, 2));
+    //  this.setState({isOrderForm: true,})
+    //  this.setState({isFormVisible: false,})
+    // }
+    // else {
+    //   this.setState({isFormVisible: false,})
+    //   console.log(response.status);
+    // }
   }
   onCloseOrder = () => {
     this.setState({isFormVisible: false,isOrderForm: false,})

@@ -1,6 +1,6 @@
 import "./index.css"
-import Texts from "../../resources/text";
 import Images from "../../resources/image";
+import Texts from "../../resources/text";
 
 
 const Buttons = (props) => {
@@ -13,12 +13,12 @@ const Buttons = (props) => {
                     <span className="">{Texts.ua.button1}</span>
                 </button>
             </a>
-            <a href="#">
+            {/* <a href="#">
             <button onClick={formVisible} className="callback-btn btn-wrapper">
                 <img src={Images.emailImg.src} alt="Button 2 icon" className="icon-2"/>
                 <span className="">{Texts.ua.button2}</span>
             </button>
-            </a>
+            </a> */}
         </div>
     )
 }

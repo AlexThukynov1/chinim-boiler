@@ -1,7 +1,9 @@
 import { Component } from "react"
-import BasicFormSchema from "./scheme";
 import { Formik, Field, Form } from "formik";
+
 import Images from "../../resources/image";
+
+import BasicFormSchema from "./scheme";
 import "./index.css"
 
 class Forma extends Component {
@@ -24,7 +26,7 @@ class Forma extends Component {
                         validationSchema={BasicFormSchema}
                         onSubmit={onSubmit}
                         render={({ errors, touched }) => (
-                            <Form className="form">
+                            <Form action="sendmail.php" method="POST" className="form">
                                 <div className="form-header">
                                     <div><span className="form-caption">Залишити заявку</span></div>
                                     <div className="close-btn" onClick={closeForm}><img src={Images.closeBtn.src} /></div>
